@@ -528,6 +528,7 @@ a {
   visibility: visible;
   pointer-events: auto;
 }
+
 .modal {
   position: absolute;
   border-radius: 4px;
@@ -542,6 +543,9 @@ a {
   width: 100%;
   max-width: 288px;
   min-height: 584px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .close-btn {
   position: absolute;
@@ -939,6 +943,10 @@ a {
   }
   .policy-link {
     margin-left: 4px;
+  }
+
+  .mob-menu {
+    display: none;
   }
 }
 @media screen and (min-width: 1158px) {
