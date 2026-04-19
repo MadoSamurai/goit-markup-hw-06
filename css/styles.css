@@ -197,7 +197,9 @@ a {
   gap: 72px;
   flex-wrap: wrap;
 }
-
+.features-list-item {
+  width: 100%;
+}
 .features-icon {
   width: 100%;
   height: 112px;
@@ -260,6 +262,7 @@ a {
 }
 .team-img {
   display: block;
+  max-width: 100%;
 }
 .team-card-name {
   padding: 32px 16px;
@@ -328,6 +331,10 @@ a {
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   overflow: hidden;
   margin: 0 auto;
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
 }
 .portfolio-card-content {
   position: relative;
@@ -362,6 +369,7 @@ a {
 
 .portfolio-img {
   display: block;
+  max-width: 100%;
 }
 .portfolio-card-name {
   border: 1px solid #e7e9fc;
@@ -375,8 +383,8 @@ a {
 }
 .footer {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
 }
 .footer .container {
   display: flex;
@@ -508,9 +516,6 @@ a {
   height: 100%;
   background-color: rgba(46, 47, 66, 0.4);
   z-index: 999;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -547,16 +552,18 @@ a {
   border-radius: 50%;
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   fill: #2e2f42;
   cursor: pointer;
   transition-property: fill, background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.close-btn-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .close-btn:hover,
 .close-btn:focus {
   background-color: #404bbf;
@@ -715,14 +722,20 @@ a {
   height: 100%;
   background: #fff;
   z-index: 999;
-  padding: 72px 16px 40px 16px;
-  display: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
+  transition-property: opacity, visibility;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-content {
+  width: 100%;
+  height: 100%;
+  padding: 72px 16px 40px 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .mob-menu.is-open {
   visibility: visible;
@@ -744,6 +757,12 @@ a {
   transition-property: fill, background-color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mob-menu-close-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .mob-menu-close:hover,
 .mob-menu-close:focus {
@@ -819,7 +838,7 @@ a {
   }
   .address-list {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 12px;
   }
   .address-link {
@@ -939,6 +958,7 @@ a {
   .address-list {
     gap: 40px;
     align-items: center;
+    flex-direction: row;
   }
   .address-link {
     font-size: 16px;
@@ -991,6 +1011,7 @@ a {
   }
   .portfolio-card {
     width: calc((100% - 24px * 2) / 3);
+    box-shadow: none;
   }
   .portfolio-card-content {
     height: auto;
@@ -1008,5 +1029,9 @@ a {
   }
   .footer-subscribe {
     margin-left: auto;
+  }
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 }
