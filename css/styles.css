@@ -657,16 +657,10 @@ a {
   line-height: 1.16667;
   letter-spacing: 0.04em;
   color: #8e8f99;
-}
-.modal-check-wrapper {
   display: flex;
   align-items: center;
 }
-.modal-check-txt {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-}
+
 .policy-link {
   text-decoration: underline;
   text-decoration-skip-ink: none;
