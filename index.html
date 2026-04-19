@@ -48,7 +48,7 @@
             </li>
           </ul>
         </address>
-        <button class="menu-btn" type="button">
+        <button class="menu-btn mob-menu-open" type="button">
           <svg class="menu-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-menu"></use>
           </svg>
@@ -126,7 +126,13 @@
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-card">
-              <img class="team-img" src="./images/team-img-1.jpg" alt="Mark Guerrero" width="264" />
+              <img
+                class="team-img"
+                src="./images/team-img-1.jpg"
+                srcset="./images/team-img-1.jpg 1x, ./images/team-img-1-2x.jpg 2x"
+                alt="Mark Guerrero"
+                width="264"
+              />
               <div class="team-card-name">
                 <h3 class="team-card-title">Mark Guerrero</h3>
                 <p class="team-card-descr">Product Designer</p>
@@ -163,7 +169,13 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-img" src="./images/team-img-2.jpg" alt="Tom Ford" width="264" />
+              <img
+                class="team-img"
+                src="./images/team-img-2.jpg"
+                srcset="./images/team-img-2.jpg 1x, ./images/team-img-2-2x.jpg 2x"
+                alt="Tom Ford"
+                width="264"
+              />
               <div class="team-card-name">
                 <h3 class="team-card-title">Tom Ford</h3>
                 <p class="team-card-descr">Frontend Developer</p>
@@ -200,7 +212,13 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-img" src="./images/team-img-3.jpg" alt="Camila Garcia" width="264" />
+              <img
+                class="team-img"
+                src="./images/team-img-3.jpg"
+                srcset="./images/team-img-3.jpg 1x, ./images/team-img-3-2x.jpg 2x"
+                alt="Camila Garcia"
+                width="264"
+              />
               <div class="team-card-name">
                 <h3 class="team-card-title">Camila Garcia</h3>
                 <p class="team-card-descr">Marketing</p>
@@ -237,7 +255,13 @@
               </div>
             </li>
             <li class="team-card">
-              <img class="team-img" src="./images/team-img-4.jpg" alt="Daniel Wilson" width="264" />
+              <img
+                class="team-img"
+                src="./images/team-img-4.jpg"
+                srcset="./images/team-img-4.jpg 1x, ./images/team-img-4-2x.jpg 2x"
+                alt="Daniel Wilson"
+                width="264"
+              />
               <div class="team-card-name">
                 <h3 class="team-card-title">Daniel Wilson</h3>
                 <p class="team-card-descr">UI Designer</p>
@@ -286,6 +310,7 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-img-1.jpg"
+                  srcset="./images/portfolio-img-1.jpg 1x, ./images/portfolio-img-1-2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                 />
@@ -306,6 +331,7 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-img-2.jpg"
+                  srcset="./images/portfolio-img-2.jpg 1x, ./images/portfolio-img-2-2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                 />
@@ -326,6 +352,7 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-img-3.jpg"
+                  srcset="./images/portfolio-img-3.jpg 1x, ./images/portfolio-img-3-2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                 />
@@ -346,6 +373,7 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-img-4.jpg"
+                  srcset="./images/portfolio-img-4.jpg 1x, ./images/portfolio-img-4-2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                 />
@@ -366,6 +394,7 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-img-5.jpg"
+                  srcset="./images/portfolio-img-5.jpg 1x, ./images/portfolio-img-5-2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                 />
@@ -386,6 +415,7 @@
                 <img
                   class="portfolio-img"
                   src="./images/portfolio-img-6.jpg"
+                  srcset="./images/portfolio-img-6.jpg 1x, ./images/portfolio-img-6-2x.jpg 2x"
                   alt="Banking App"
                   width="360"
                 />
@@ -529,12 +559,79 @@
                   <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="policy-link" href="#">Privacy Policy</a>
+              <span class="modal-check-txt">
+                I accept the terms and conditions of the
+                <a class="policy-link" href="#">Privacy Policy</a>
+              </span>
             </label>
           </div>
           <button type="submit" class="modal-btn">Send</button>
         </form>
+      </div>
+    </div>
+
+    <div class="mob-menu">
+      <button class="mob-menu-close" type="button">
+        <svg class="mob-menu-close-icon" width="8" height="8">
+          <use href="./images/icons.svg#close"></use>
+        </svg>
+      </button>
+      <nav class="mob-menu-nav">
+        <ul class="mob-menu-list">
+          <li class="mob-menu-item">
+            <a href="./index.html" class="mob-menu-link mob-menu-link-active">Studio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="./index.html" class="mob-menu-link">Portfolio</a>
+          </li>
+          <li class="mob-menu-item">
+            <a href="./index.html" class="mob-menu-link">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="mob-menu-footer">
+        <address class="mob-address">
+          <ul class="mob-address-list">
+            <li class="mob-address-item">
+              <a href="tel:+110001111111" class="mob-address-link mob-address-link-active"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+            <li class="mob-address-item">
+              <a href="mailto:info@devstudio.com" class="mob-address-link">info@devstudio.com</a>
+            </li>
+          </ul>
+        </address>
+        <ul class="mob-social-list">
+          <li>
+            <a href="#" class="social-link">
+              <svg class="team-icon" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <svg class="team-icon" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <svg class="team-icon" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li>
+            <a href="#" class="social-link">
+              <svg class="team-icon" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </body>
